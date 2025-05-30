@@ -1,0 +1,63 @@
+# Project information
+site_name: Wave wet en regelgeving
+site_url: 'https://apv.wavetestserver.nl/'
+site_description: 'Wet en regelgeving van Wave Testserver'
+site_author: 'Wave'
+
+# Copyright
+copyright: Copyright &copy; 2023 - 2025 Wave
+
+# Congiguration
+theme:
+  name: material
+#   features:
+#     - navigation.tabs
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to system preference
+  favicon: img/logoWave.png
+  logo: img/logoWave.webp
+  custom_dir: docs/overrides
+  language: nl
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.indexes
+    - header.autohide
+    - toc.follow
+    - content.action.edit
+    - content.action.view
+  extra:
+    analytics:
+      provider: google
+      property: UA-167800475-3
+      
+markdown_extensions:
+  - admonition
+  - attr_list
+extra_javascript:
+  - https://cdnjs.cloudflare.com/ajax/libs/tablesort/5.2.1/tablesort.min.js
+  - javascripts/tables.js
+nav:
+  - Home: index.md
+  - Algemene Plaatselijke Verordening: apv.md
+  # - Wetboek: wetboek.md
+  # - Risicogebieden: risico-gebieden.md
+  # - Douanegebieden: douanegebieden.md
+  # - NOTAM: notam.md
+  # - Belastingen: belastingen.md
+  # - Regelement voor de rechtspraak: rechtspraak.md
+  - Streamen op Wave: streamen.md
+  - Spawn lijst:
+    - Vehicles: kosten/vehicles.md
+    - Weapons: kosten/weapons.md
+    - Items: kosten/items.md
+    - Jobs: kosten/jobs.md
